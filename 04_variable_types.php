@@ -32,6 +32,27 @@ $retval = multiply (10);
 echo "<br>";
 Print "Return value is $retval\n";
 
+echo "<br>";
+
+$t = date("H");
+
+if ($t < "12") {
+  echo "Have a good day!";
+} else {
+  echo "Have a good night!";
+}
+
+$a = 10;
+$b = 50;
+
+echo "<br>";
+
+if ($a > $b){ 
+  echo "Hello World";
+} else {
+  echo "Wassup";  
+}
+
 ?>
 
 </body>
