@@ -21,6 +21,15 @@ echo ("<br>");
 echo constant("TWO2");
 echo ("<br>");
 echo constant("THREE_3");
+
+define("GAMES", ["LOL", "DOTA 2", "CS2", "VALO"]);echo ("<br>");
+    echo GAMES[0];
+    echo ("<br>");
+    echo GAMES[1];
+    echo ("<br>");
+    echo GAMES[2];
+    echo ("<br>");
+    echo GAMES[3];
 ?>
 </body>
 </html>
