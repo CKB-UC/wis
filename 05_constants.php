@@ -29,6 +29,10 @@ define("GAMES", ["LOL", "DOTA 2", "CS2", "VALO"]);echo ("<br>");
     echo ("<br>");
     echo GAMES[2];
     echo ("<br>");
+    echo GAMES[3];echo GAMES[3];
+    echo GAMES[3];echo GAMES[3];
+    echo GAMES[3];echo GAMES[3];
+    echo GAMES[3];echo GAMES[3];
     echo GAMES[3];
 ?>
 </body>
