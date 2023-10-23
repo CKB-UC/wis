@@ -27,6 +27,9 @@
         <th>Ctrl+P</th> <td>Quick Open, Go to File</td>
     </tr>
     <tr>
+        <th>Ctrl+W</th> <td>To Close File</td>
+    </tr>
+    <tr>
         <th>Ctrl+Shift+N</th> <td>New Window</td>
     </tr>
     <tr>
@@ -42,9 +45,8 @@
         <th>Windows+E</th> <td>To run File Explorer </td>
     </tr>
     <tr>
-        <th>Windows+R</th>  <td>Open RUN Box</td>
+        <th>Windows+R</th> <td>Open RUN Box</td>
     </tr>
-
 </table>
 
 </body>
