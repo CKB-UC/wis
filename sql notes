@@ -12,8 +12,12 @@ CREATE TABLE Student(
 
 CREATE TABLE Enrollment(
     EnrollmentID int NOT NULL PRIMARY KEY,
-    StudentID INT FOREIGN KEY REFERENCES Student(StudentID),
-
+    StudentID int,
+    FOREIGN KEY (StudentID) REFERENCES Student (StudentID),
+    CourseID int,
+    FOREIGN KEY (CourseID) REFERENCES Course (CourseID),
+    EnrollmentDate varchar(255),
+    Grade int
 );
 
 CREATE TABLE Course(
@@ -21,7 +25,7 @@ CREATE TABLE Course(
     CourseName varchar(255),
     Credits int,
     InstructorID int,
-    FOREIGN KEY REFERENCES Instructor(InstructorID)
+    FOREIGN KEY (InstructorID) REFERENCES Instructor (InstructorID)
 );
 
 CREATE TABLE Instructor(
