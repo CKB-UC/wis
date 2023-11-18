@@ -1,0 +1,33 @@
+CREATE DATABASE StudentRecord;
+
+CREATE TABLE Student(
+    StudentID int NOT NULL PRIMARY KEY,
+    FirstName varchar(255) NOT NULL,
+    LastName varchar(255),
+    DateOfBirth varchar(255),
+    Email varchar(255),
+    Phone int
+);
+
+
+CREATE TABLE Enrollment(
+    EnrollmentID int NOT NULL PRIMARY KEY,
+    StudentID INT FOREIGN KEY REFERENCES Student(StudentID),
+
+);
+
+CREATE TABLE Course(
+    CourseID int NOT NULL PRIMARY KEY,
+    CourseName varchar(255),
+    Credits int,
+    InstructorID int,
+    FOREIGN KEY REFERENCES Instructor(InstructorID)
+);
+
+CREATE TABLE Instructor(
+    InstructorID int NOT NULL PRIMARY KEY,
+    FirstName varchar(255) NOT NULL,
+    LastName varchar(255),
+    Email varchar(255),
+    Phone int
+);
