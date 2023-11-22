@@ -35,3 +35,16 @@ CREATE TABLE Instructor(
     Email varchar(255),
     Phone int
 );
+
+
+INSERT INTO Student(StudentID, FirstName, LastName, DateOfBirth, Email, Phone)
+VALUES (0001, "Cedrick", "Balos", "11-02-2000", "baloskeanu@gmail.com", 09556328167);
+
+INSERT INTO Enrollment(EnrollmentID, StudentID, CourseID, EnrollmentDate, Grade)
+VALUES (3001, 0001, 2217, "08-08-2023", 85);
+
+INSERT INTO Course(CourseID, CourseName, Credits, InstructorID)
+VALUES (2217, "Prog101", 3, 2001);
+
+INSERT INTO Instructor(InstructorID, FirstName, LastName, Email, Phone)
+VALUES (2001, "Sida", "Chicc", "blahblah@gmail.com", 02225482122);
